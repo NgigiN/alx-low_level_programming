@@ -1,0 +1,2 @@
+#!/ban/bash
+gcc -c $CFILE -o 1-main.0
