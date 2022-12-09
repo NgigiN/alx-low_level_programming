@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /*
- * main - Entry point to the code
+ * main - main function to output base 16 values
  *
  * Return: Always 0 (Success)
  */
