@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point of code
+ * main - returns an alphabet in reverse order
  *
- * return (0) Success
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -17,5 +17,6 @@ int main(void)
 		ch--;
 	}
 	putchar('\n');
+
 	return (0);
 }

@@ -2,20 +2,23 @@
 #include <stdlib.h>
 
 /**
- * main - entry point of the code
+ * main - return single integer from 0-10
  *
- * return (0) Success
+ * Return: Always 0 (Success)
  */
 
 int main(void)
-{
-	int ch = 0;
 
-	while (ch <= 10)
+{
+	int num = 0;
+
+	while (num < 10)
 	{
-		putchar(ch);
-		ch++;
+		printf("%d", num);
+		num++;
 	}
 	putchar('\n');
+
 	return (0);
+
 }
