@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 
 /**
  * print_sign - return - letter not lowercase, 1 if true
@@ -8,19 +8,19 @@
  *
  */
 
-int print_sign(int n);
+int print_sign(int n)
 {
 	if (n < 0)
 	{
-		purtchar('-');
+		_putchar('-');
 	}
 	else if (n > 0)
 	{
-		putchar('0');
+		_putchar('0');
 	}
 	else
 	{
-		putchar('-');
+		_putchar('-');
 	}
 	return (0);
 }
