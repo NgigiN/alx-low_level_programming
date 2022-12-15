@@ -1,22 +1,29 @@
 #include "main.h"
 
 /**
- * print_line - prints line
- * @n: param
+ * more_numbers - prints more numbers
+ * Return: 0 if successful
  */
 
-void print_line(int n)
+void more_numbers(void)
 {
-	if (n > 0)
+	int i, j;
+
+	i = 0;
+
+	while (i < 10)
 	{
-	for (int c = 0; c < n; c++)
-	{
-		putchar(95);
-	}
-	putchar('\n');
-	}
-	else
-	{
-		putchar('\n');
+		for (j = 0; j < 15; j++)
+		{
+			if (j >= 10)
+			{
+				_putchar((j / 10) + 48);
+			}
+			_putchar((j % 10) + 48);
+		}
+
+		_putchar('\n');
+
+		i++;
 	}
 }
