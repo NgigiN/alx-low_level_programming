@@ -1,33 +1,29 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * more_numbers - prints more numbers
+ * Return: 0 if successful
  */
 
-int main(void)
+void more_numbers(void)
 {
-	for (int i = 1; i <= 100; i++)
+	int i, j;
+
+	i = 0;
+
+	while (i < 10)
 	{
-		if ((i % 3 == 0) && (i % 5 == 0))
+		for (j = 0; j < 15; j++)
 		{
-			printf("FizzBuzz ");
+			if (j >= 10)
+			{
+				_putchar((j / 10) + 48);
+			}
+			_putchar((j % 10) + 48);
 		}
-		else
-		{
-			if (i % 3 == 0)
-			{
-				printf("Fizz ");
-			}
-			if (i % 5 == 0)
-			{
-				printf("Buzz ");
-			}
-			else
-			{
-				printf("%d ", i);
-			}
-		}
+
+		_putchar('\n');
+
+		i++;
 	}
 }
