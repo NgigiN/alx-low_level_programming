@@ -1,10 +1,9 @@
 #include "main.h"
-#include "stdio.h"
 
 /**
  * _isupper: checks if a character input is uppercase
  * or lowercase
- * Return: 1 if uppercase and 0 if lowercas
+ * Return: 1 if uppercase and 0 if lowercase
  * @c: is character input by the user
  */
 
