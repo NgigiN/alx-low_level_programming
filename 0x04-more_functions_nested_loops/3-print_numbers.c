@@ -1,14 +1,16 @@
 #include "main.h"
 
 /**
- * print_numbers - outputs digits desired
+ * print_numbers - prints number
  */
 
 void print_numbers(void)
 {
-	for (int c = 48; c < 58; c++)
+	int i;
+
+	for (i = 48; i < 58; i++)
 	{
-		putchar(c);
+		_putchar(i);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
