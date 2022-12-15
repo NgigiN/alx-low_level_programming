@@ -10,8 +10,6 @@
 
 int _isupper(int c)
 {
-	int d;
-
 	if (c > 64 && c < 91)
 	{
 		return (1);
