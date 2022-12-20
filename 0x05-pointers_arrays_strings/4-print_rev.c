@@ -8,9 +8,12 @@
 
 void print_rev(char *s)
 {
-	if (*s)
+	if ('\0' == s[0])
 	{
-		print_rev(s + 1);
-		putchar(*s);
+	}
+	else
+	{
+		reverse(&s[1]);
+		putchar(s[0]);
 	}
 }
