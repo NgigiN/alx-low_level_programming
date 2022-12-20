@@ -13,7 +13,7 @@ void print_rev(char *s)
 	}
 	else
 	{
-		reverse(&s[1]);
+		print_rev(&s[1]);
 		putchar(s[0]);
 	}
 }
