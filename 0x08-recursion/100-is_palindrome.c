@@ -10,7 +10,7 @@
 int palindromechecker(char *str, int len, int i)
 {
 	if (i < len && str[i] == str[len])
-		return (palindromechecker(str, len -1, i + 1));
+		return (palindromechecker(str, len - 1, i + 1));
 	if (str[i] != str[len])
 		return (0);
 	return (1);
