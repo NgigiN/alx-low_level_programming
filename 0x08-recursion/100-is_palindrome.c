@@ -7,7 +7,7 @@
  * Return: 1 fi palindrome, 0 if not
  */
 
-int palinndromechecker(char *str, int len, dsint i)
+int palindromechecker(char *str, int len, int i)
 {
 	if (i < len && str[i] == str[len])
 		return (palindromechecker(str, len -1, i + 1));
@@ -37,7 +37,7 @@ int _strlen_recursion(char *s)
 int is_palindrome(char *s)
 {
 	int i = 0;
-	int length = _strleng_recursion(s) - 1;
+	int length = _strlen_recursion(s) - 1;
 
 	return (palindromechecker(s, length, i));
 }
