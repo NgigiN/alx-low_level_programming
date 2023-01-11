@@ -4,7 +4,7 @@
 /**
  * _strdup - copies a string and returns a pointer
  * @str: string
- * Return : Pointer of NULL
+ * Return: Pointer of NULL
  */
 
 char *_strdup(char *str)
