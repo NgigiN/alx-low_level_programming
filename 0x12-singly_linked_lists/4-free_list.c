@@ -1,23 +1,17 @@
 #include "lists.h"
-#include <stdio.h>
-
 /**
- * free_list - is a function that frees a list
- * @head: pointer to the head of the list
- * Return: void
+ * free_list - frees a list
+ * @head: head of the linked list.
+ * Return: no return.
  */
-
 void free_list(list_t *head)
 {
-	list_t *tem;
+	list_t *current;
 
-	while (head)
+	while ((current = head) != NULL)
 	{
-		tem = head;
 		head = head->next;
-		free(temp->str);
-		free(temp);
+		free(current->str);
+		free(current);
 	}
-
-	free(head);
 }
