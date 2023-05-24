@@ -3,13 +3,15 @@ CC=gcc
 
 SRC = main.c school.c
 
+OBJ = main.o school.o
+
 all: NAME
 
-NAME: school
+NAME: $(OBJ) 
 	$(CC) $(OBJ) -o school
 
-OBJ: main.o school.o
-	$(CC) -c -o $(SRC)
+$(OBJ): $(SRC)
+	$(CC) -c $(SRC)	
 
 clean:
-	rm *.o school
+	rm -f $(OBJ) school
