@@ -3,16 +3,9 @@ CC=gcc
 
 SRC = main.c school.c
 
-OBJ = main.o school.o
+OBJ = $(SRC:.c=.o)
 
-all: NAME
 
-NAME: $(OBJ)
+NAME = school
 	$(CC) $(OBJ) -o school
 
-$(OBJ): $(SRC)
-	$(CC) -c -o main.o main.c
-	$(CC) -c -o school.o school.c
-
-clean:
-	rm -f $(OBJ) school
